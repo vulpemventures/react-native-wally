@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		13BE3DEE1AC21097009241FE /* wally.m in Sources */ = {isa = PBXBuildFile; fileRef = 13BE3DED1AC21097009241FE /* wally.m */; };
+		6A6669D42221C049003E95DC /* libsecp256k1.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A6669D22221C049003E95DC /* libsecp256k1.a */; };
+		6A6669D52221C049003E95DC /* libwallycore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A6669D32221C049003E95DC /* libwallycore.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -26,6 +28,24 @@
 		134814201AA4EA6300B7C361 /* libwally.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libwally.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		13BE3DEC1AC21097009241FE /* wally.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wally.h; sourceTree = "<group>"; };
 		13BE3DED1AC21097009241FE /* wally.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = wally.m; sourceTree = "<group>"; };
+		6A6669D22221C049003E95DC /* libsecp256k1.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libsecp256k1.a; sourceTree = "<group>"; };
+		6A6669D32221C049003E95DC /* libwallycore.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libwallycore.a; sourceTree = "<group>"; };
+		6A6669D62221C07D003E95DC /* secp256k1_surjectionproof.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = secp256k1_surjectionproof.h; sourceTree = "<group>"; };
+		6A6669D72221C07D003E95DC /* wally_bip38.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wally_bip38.h; sourceTree = "<group>"; };
+		6A6669D82221C07D003E95DC /* secp256k1_whitelist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = secp256k1_whitelist.h; sourceTree = "<group>"; };
+		6A6669D92221C07D003E95DC /* wally_elements.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wally_elements.h; sourceTree = "<group>"; };
+		6A6669DA2221C07D003E95DC /* wally_script.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wally_script.h; sourceTree = "<group>"; };
+		6A6669DB2221C07D003E95DC /* wally.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = wally.hpp; sourceTree = "<group>"; };
+		6A6669DC2221C07D003E95DC /* secp256k1_ecdh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = secp256k1_ecdh.h; sourceTree = "<group>"; };
+		6A6669DD2221C07D003E95DC /* wally_crypto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wally_crypto.h; sourceTree = "<group>"; };
+		6A6669DE2221C07D003E95DC /* secp256k1_rangeproof.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = secp256k1_rangeproof.h; sourceTree = "<group>"; };
+		6A6669DF2221C07D003E95DC /* wally_address.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wally_address.h; sourceTree = "<group>"; };
+		6A6669E02221C07D003E95DC /* wally_bip32.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wally_bip32.h; sourceTree = "<group>"; };
+		6A6669E12221C07D003E95DC /* wally_transaction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wally_transaction.h; sourceTree = "<group>"; };
+		6A6669E22221C07D003E95DC /* wally_bip39.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wally_bip39.h; sourceTree = "<group>"; };
+		6A6669E32221C07E003E95DC /* secp256k1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = secp256k1.h; sourceTree = "<group>"; };
+		6A6669E42221C07E003E95DC /* secp256k1_generator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = secp256k1_generator.h; sourceTree = "<group>"; };
+		6A6669E52221C07E003E95DC /* wally_core.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wally_core.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +53,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A6669D52221C049003E95DC /* libwallycore.a in Frameworks */,
+				6A6669D42221C049003E95DC /* libsecp256k1.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,6 +72,7 @@
 		58B511D21A9E6C8500147676 = {
 			isa = PBXGroup;
 			children = (
+				6A6669D12221C01A003E95DC /* libwally */,
 				13BE3DEC1AC21097009241FE /* wally.h */,
 				13BE3DED1AC21097009241FE /* wally.m */,
 				134814211AA4EA7D00B7C361 /* Products */,
@@ -58,6 +81,31 @@
 			sourceTree = "<group>";
 			tabWidth = 2;
 			usesTabs = 0;
+		};
+		6A6669D12221C01A003E95DC /* libwally */ = {
+			isa = PBXGroup;
+			children = (
+				6A6669DC2221C07D003E95DC /* secp256k1_ecdh.h */,
+				6A6669E42221C07E003E95DC /* secp256k1_generator.h */,
+				6A6669DE2221C07D003E95DC /* secp256k1_rangeproof.h */,
+				6A6669D62221C07D003E95DC /* secp256k1_surjectionproof.h */,
+				6A6669D82221C07D003E95DC /* secp256k1_whitelist.h */,
+				6A6669E32221C07E003E95DC /* secp256k1.h */,
+				6A6669DF2221C07D003E95DC /* wally_address.h */,
+				6A6669E02221C07D003E95DC /* wally_bip32.h */,
+				6A6669D72221C07D003E95DC /* wally_bip38.h */,
+				6A6669E22221C07D003E95DC /* wally_bip39.h */,
+				6A6669E52221C07E003E95DC /* wally_core.h */,
+				6A6669DD2221C07D003E95DC /* wally_crypto.h */,
+				6A6669D92221C07D003E95DC /* wally_elements.h */,
+				6A6669DA2221C07D003E95DC /* wally_script.h */,
+				6A6669E12221C07D003E95DC /* wally_transaction.h */,
+				6A6669DB2221C07D003E95DC /* wally.hpp */,
+				6A6669D22221C049003E95DC /* libsecp256k1.a */,
+				6A6669D32221C049003E95DC /* libwallycore.a */,
+			);
+			path = libwally;
+			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
@@ -228,7 +276,10 @@
 					"$(SRCROOT)/../../React/**",
 					"$(SRCROOT)/../../node_modules/react-native/React/**",
 				);
-				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/libwally",
+				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = wally;
 				SKIP_INSTALL = YES;
@@ -243,7 +294,10 @@
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					"$(SRCROOT)/../../React/**",
 				);
-				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/libwally",
+				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = wally;
 				SKIP_INSTALL = YES;
