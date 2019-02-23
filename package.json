@@ -1,0 +1,18 @@
+{
+  "name": "react-native-wally",
+  "version": "0.0.1",
+  "keywords": [
+    "react-native"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tiero/react-native-wally.git"
+  },
+  "author": "tiero",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tiero/react-native-wally/issues"
+  },
+  "homepage": "https://github.com/tiero/react-native-wally#readme",
+  "description": "React Native wrapper for Wally, a cross-platform, cross-language collection of useful primitives for cryptocurrency wallets."
+}
