@@ -4,8 +4,8 @@
 // LICENSE file in the root directory of this source tree.
 
 #import "wally.h"
-#import "wally_core.h"
-#import "wally_address.h"
+
+#import <React/RCTConvert.h>
 
 @implementation wally
 
