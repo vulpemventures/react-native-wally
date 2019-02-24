@@ -7,16 +7,17 @@
 
 'use strict';
 
-const Nativewally = require('react-native').NativeModules;
+const Nativewally = require('react-native').NativeModules.wally;
 
 /**
  * High-level docs for the wally iOS API can be written here.
  */
 
-const wally = {
-  test: function() {
-    Nativewally.test();
-  },
+const test = (params) => {
+  return Nativewally.test(params);
 };
 
-module.exports = wally;
+
+module.exports = {
+  test,
+};
