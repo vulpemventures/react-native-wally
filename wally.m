@@ -12,22 +12,14 @@
 RCT_EXPORT_MODULE()
 
 
-RCT_REMAP_METHOD(wallyInit,
-                 findEventsWithResolver:(RCTPromiseResolveBlock)resolve
-                 rejecter:(RCTPromiseRejectBlock)reject)
+RCT_EXPORT_METHOD(test:(NSDictionary *)request
+                  resolver:(RCTPromiseResolveBlock)resolve
+                  rejecter:(RCTPromiseRejectBlock)reject)
 {
-  wally_init(0);
-  
-  uint64_t out;
-  wally_is_elements_build(&out);
-  
-  
-  NSLog(@"======== ========");
-  NSLog(@"Is Element:%llu",out);
-  
-  wally_cleanup(0);
-  
-  resolve(out);
+  //Required parameters
+  NSString *address = [RCTConvert NSString:request[@"address"]];
+
+  resolve(address);
 }
 
 
