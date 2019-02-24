@@ -4,6 +4,7 @@
   "keywords": [
     "react-native"
   ],
+  "main": "wally",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/tiero/react-native-wally.git"
