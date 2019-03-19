@@ -21,7 +21,7 @@ React Native wrapper for [Wally](https://github.com/ElementsProject/libwally-cor
 * Enter in your React Native project root folder and run
 
 ```sh
-$ yarn add https://github.com/tiero/react-native-wally.git
+$ yarn add https://github.com/vulpemventures/react-native-wally.git
 ```
 
 * Link native module
@@ -39,7 +39,7 @@ $ react-native link react-native-wally
 ```
 #### Examples
 
-* [Libwally Example](https://github.com/tiero/react-native-wally-example)
+* [Libwally Example](https://github.com/vulpemventures/react-native-wally-example)
 
 ## Credits
 
